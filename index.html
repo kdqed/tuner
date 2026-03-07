@@ -21,6 +21,7 @@
       --green: #6cb856;
       --yellow: #a39648;
       --dim: #ac9e84;
+      font-variant-ligatures: common-ligatures;
     }
 
     html, body {
@@ -192,10 +193,10 @@
 
         if (inTune) {
           noteEl.textContent = name;
-        } else if (cents > 0) {
-          noteEl.textContent = `${name} ->`;
+        } else if (cents < 0) {
+          noteEl.textContent = `${name} >>`;
         } else {
-          noteEl.textContent = `<- ${name}`;
+          noteEl.textContent = `<< ${name}`;
         }
 
         const sign = cents > 0 ? '+' : '';
