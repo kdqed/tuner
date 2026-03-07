@@ -1,3 +1,4 @@
+const VERSION = '0.1.1';
 const CACHE = 'tuner-kd-v1';
 const CORE = ['./index.html', './manifest.json', './icon.png'];
 
